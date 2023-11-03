@@ -50,7 +50,7 @@ app.get("/filteredimage/", (req: Request, res: Response) => {
       });
     })
     .catch(() => {
-      return res.status(422).send("error when processing the image");
+      return res.status(500).send("error when processing the image");
     });
 });
 
